@@ -22,22 +22,22 @@ export class AboutComponent implements OnInit{
 
         {
           label: 'Github',
-          icon: '/github.svg',
+          icon: 'assets/github.svg',
           link: 'https://github.com/Sabvl67'
         },
         {
           label: 'Linkedin',
-          icon: '/linkedin.svg',
+          icon: 'assets/linkedin.svg',
           link: 'https://www.linkedin.com/in/qanh-vo/'
         },
         {
           label: 'Gmail',
-          icon: '/gmail.svg',
+          icon: 'assets/gmail.svg',
           link: 'mailto:volequynhanh67@gmail.com'
         },
         {
           label: 'Discord',
-          icon: '/discord.svg',
+          icon: 'assets/discord.svg',
           link: 'https://discord.com/users/munjkin'
         },
       ];

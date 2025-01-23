@@ -5,7 +5,7 @@
 
 /* You can add global styles to this file, and also import other style files */
 body {
-    background-image: url("/bg.png");
+    background-image: url("/assets/bg.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -22,4 +22,3 @@ html {
     padding: 10px;
     max-width: calc(100% - 80px); /* Adjust width to leave space for the dock */
 }
-
