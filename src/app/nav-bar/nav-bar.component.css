@@ -1,0 +1,28 @@
+.navbar-links .nav-item {
+    margin-right: 20px; /* Adjust the value as needed */
+}
+
+.navbar-links .nav-item .nav-link {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 10px 15px;
+    position: relative;
+    transition: color 0.3s ease-in-out; 
+}
+
+.navbar-links .nav-item .nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0; 
+    height: 2px; 
+    background-color: white; 
+    transition: width 0.3s ease-in-out; /* Smooth animation */
+}
+
+.navbar-links .nav-item .nav-link:hover::after {
+    width: 100%; /* Expand underline on hover */
+}

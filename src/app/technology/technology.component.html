@@ -1,0 +1,57 @@
+<div class="container py-6" id="technology">
+    <!-- Left Section: Technology -->
+      <div class="content">
+        <div class="pl-3"> <h1>Technology</h1></div>
+        <nav>
+          <ul class="mini-nav flex flex-row py-3" style="list-style-type: none;">
+            <li class="nav-item p-1 rounded">
+              <a href="#" (click)="$event.preventDefault(); setActiveSection('technology')"
+                [class.active]="activeSection === 'technology'">Technology</a>
+            </li>
+            <li class="nav-item p-1 rounded">
+              <a href="#" (click)="$event.preventDefault(); setActiveSection('achievements')"
+                [class.active]="activeSection === 'achievements'">Achievements</a>
+            </li>
+            <li class="nav-item p-1 rounded">
+              <a href="#" (click)="$event.preventDefault(); setActiveSection('certifications')"
+                [class.active]="activeSection === 'certifications'">Certifications</a>
+            </li>
+          </ul>
+        </nav>
+        <div id="content" class="content-section">
+          <div *ngIf="activeSection === 'technology'">
+            <div class="grid-container">
+              <button class="gradient-button">HTML</button>
+              <button class="gradient-button">CSS</button>
+              <button class="gradient-button">Angular</button>
+              <button class="gradient-button">C++</button>
+              <button class="gradient-button">Python</button>
+              <button class="gradient-button">.NET</button>
+              <button class="gradient-button">SQL</button>
+              <button class="gradient-button">Azure DevOps</button>
+              <button class="gradient-button">Git</button>
+              <button class="gradient-button">Postman</button>
+              <button class="gradient-button">Swagger</button>
+              <button class="gradient-button">TensorFlow</button>
+            </div>
+          </div>
+          <div *ngIf="activeSection === 'achievements'">
+            <div>
+              <button class="gradient-button my-2" *ngFor="let achievement of achievements">{{ achievement }}</button>
+            </div>
+          </div>
+          <div *ngIf="activeSection === 'certifications'">
+            <div>
+              <button class="gradient-button my-2" *ngFor="let certification of certifications">{{ certification
+                }}</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right Section: Globe -->
+    <!-- <div id="globe" class="col-6 globe-container">
+      <iframe src="https://my.spline.design/particles-6ffff2676084168a328b34515ea636bc/" frameborder="0"></iframe>
+    </div> -->
+

@@ -1,0 +1,28 @@
+<div id="projects" class="projects-container">
+  <p-carousel [value]="products" [numVisible]="3" [numScroll]="1" [responsiveOptions]="responsiveOptions">
+    <ng-template let-product pTemplate="item">
+      <div class="border-1 surface-border border-round m-2 p-3 text-xl">
+        <div class="mb-3">
+          <div class="relative mx-auto">
+            <img [src]="product.image" [alt]="product.name"
+              class="w-full border-round product-image" />
+            <p-tag [value]="product.status" [severity]="getSeverity(product.status)" class="absolute"
+              [ngStyle]="{ 'left.px': 5, 'top.px': 5,  }" />
+          </div>
+        </div>
+        <div class="mb-3 font-medium">{{ product.name }}</div>
+        <div class="flex justify-content-between align-items-center">
+          <span>
+            <p-button [pTooltip]="tooltipContent" label="About" tooltipPosition="bottom" [outlined]="true" />
+            <p-button icon="pi pi-github" [rounded]="true" severity="secondary" [outlined]="true" styleClass="ml-2" (click)="openLink(product.link)" />
+            <ng-template #tooltipContent>
+              <div class="flex align-items-center">
+                  <span> {{product.description}} </span>
+              </div>
+          </ng-template>
+          </span>
+        </div>
+      </div>
+    </ng-template>
+  </p-carousel>
+</div>

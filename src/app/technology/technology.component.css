@@ -1,0 +1,95 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+#content {
+    width: 100%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.mini-nav .nav-item a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 10px 15px;
+    position: relative;
+    transition: color 0.3s ease-in-out; 
+}
+
+.mini-nav .nav-item a::after {
+    content: ''; 
+    position: absolute;
+    bottom: 0px; 
+    left: 0;
+    width: 0; 
+    height: 2px; 
+    background-color: white;
+    transition: width 0.3s ease-in-out; 
+}
+
+.mini-nav .nav-item a:hover::after {
+    width: 100%; 
+}
+
+.gradient-button {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background-color: transparent;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    text-transform: uppercase;
+    z-index: 1;
+    overflow: hidden;
+    margin: 0.5rem;
+}
+
+/* Running Gradient Border */
+.gradient-button:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 50px;
+    padding: 2px; /* Space between the gradient border and the button */
+    background: linear-gradient(90deg, #ff512f, #dd2476, #24c6dc, #ff512f); /* Added the first color to the end for smooth looping */
+    background-size: 300%;
+    animation: border-gradient 3s linear infinite;
+    -webkit-mask: 
+      linear-gradient(#fff 0 0) content-box, 
+      linear-gradient(#fff 0 0);
+    mask: 
+      linear-gradient(#fff 0 0) content-box, 
+      linear-gradient(#fff 0 0);
+    mask-composite: exclude; 
+    -webkit-mask-composite: destination-out;
+    z-index: -1;
+}
+
+/* Button Hover Effects */
+.gradient-button:hover {
+    transform: scale(1.05);
+    transition: transform 0.2s ease-in-out;
+}
+
+/* Keyframe Animation for Continuous Border Gradient */
+@keyframes border-gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 200% 50%; /* Ensures the gradient moves smoothly without resetting */
+    }
+}

@@ -1,1 +1,25 @@
+
+@import "primeng/resources/themes/lara-light-blue/theme.css";
+@import "primeng/resources/primeng.css";
+@import "primeicons/primeicons.css";
+
 /* You can add global styles to this file, and also import other style files */
+body {
+    background-image: url("/bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
+    overflow-x: hidden;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.page-content {
+    flex: 1;
+    padding: 10px;
+    max-width: calc(100% - 80px); /* Adjust width to leave space for the dock */
+}
+

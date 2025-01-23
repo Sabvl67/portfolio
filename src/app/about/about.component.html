@@ -1,0 +1,30 @@
+<div id ="about">
+    <div class = "flex justify-content-end grid col-6 pt-8">
+        <h1 class ="text-left">
+            <span class="block"> Software Developer </span>
+            <span class="block">Anh Vo</span>
+            <span class="block">Based in Canada</span>
+        </h1> 
+    </div>
+
+    <!-- Need to apply click func, for later -->
+    <div class=" card flex col-6 justify-content-end gap-5">
+            <button class="custom-button grey">Hola!</button>
+            <button class="custom-button bg">Resume</button>
+    </div>          
+
+
+    <div class="relative flex justify-content-center">
+        <img src="/about-intro.svg" alt="Introduction graphic" class="w-min h-min" style="transform: scale(0.80);">
+    </div>
+
+    <div class="fixed z-5 flex justify-content-center" style="top: 50%; right: 0%; width: 100%; height: auto;">
+        <div class="dock-window ">
+        <p-dock [model]="items" [position]="'right'">
+            <ng-template pTemplate="item" let-item>
+                <img [src]="item.icon" [alt]="item.label" width="100%" (click)="openLink(item.link)"/>
+            </ng-template>
+        </p-dock>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,40 @@
+
+.custom-button {
+    background: linear-gradient(90deg, #2954a3, #c961de); 
+    color: white;
+    border: none;          
+    padding: 0.5rem 2.0rem; 
+    border-radius: 50px;    
+    cursor: pointer;         
+    transition: background-color 0.3s ease;
+  
+    &:hover {
+      transform: scale(1.05);
+      background: linear-gradient(90deg, #2954a3, #c961de);  /* Slightly enlarge button on hover */
+    }
+  }
+
+  .relative {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image {
+    width: 90%; /* Adjust image size */
+    height: auto;
+}
+
+.text-container {
+    position: absolute; /* Fix position relative to the parent container */
+    top: 40%; /* Adjust vertical alignment */
+    left: 57%; /* Adjust horizontal alignment */
+    transform: translate(-50%, -50%); /* Center text on image */
+    text-align: left;
+    width: 90%; /* Adjust the width of the text box */
+    max-width: 280px; /* Ensure it doesn't exceed a fixed width */
+    padding: 0.5rem;
+    color: white; /* Ensure text is visible */
+}
+  

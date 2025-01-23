@@ -1,0 +1,69 @@
+
+.custom-button {
+    background: linear-gradient(90deg, #2954a3, #c961de); /* Reverse gradient on hover */
+    color: white;
+    border: none;          
+    padding: 0.5rem 2.0rem; 
+    border-radius: 50px;    
+    cursor: pointer;         
+    transition: background-color 0.3s ease;
+  
+    &:hover {
+      transform: scale(1.05); /* Slightly enlarge button on hover */
+    }
+  }
+
+/* Card styling */
+.contact-card {
+  background: rgba(47, 47, 138, 20%);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  padding: 2rem;
+  max-width: 750px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2); /* Soft shadow */
+  color: white;
+}
+
+/* Input fields */
+.input-field {
+  background: rgba(255, 255, 255, 0.2); 
+  border: none; 
+  border-radius: 10px; 
+  padding: 10px 15px;
+  width: 100%;
+  color: white;
+  font-size: 16px;
+  outline: none;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1); /* Subtle inner shadow */
+  transition: background 0.3s, border 0.3s;
+}
+
+/* Focus state */
+.input-field:focus {
+  background: rgba(255, 255, 255, 0.3);
+  border: 1px solid #4c6ef5; 
+  outline: none;
+}
+
+/* Label styling */
+label {
+  color: white;
+  font-size: 14px;
+  margin-bottom: 5px;
+  display: block;
+}
+
+/* Centering content */
+.contact-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+/* Sen button styling */
+.send {
+  display: relative;
+  justify-content: center;
+  margin-top: 1rem;
+}

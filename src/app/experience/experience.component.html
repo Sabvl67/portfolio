@@ -1,0 +1,23 @@
+<div class="card" id="experience">
+    <p-timeline [value]="events" align="alternate" styleClass="customized-timeline">
+        <ng-template pTemplate="content" let-event>
+            <p-card [header]="event.status" [subheader]="event.date">
+                    <p [innerHTML]="event.description"></p>
+                <p-button label="Read more" [text]="true" (click)="showModal(event)" />
+            </p-card>
+        </ng-template>
+    </p-timeline>
+
+    <!-- Custom Modal -->
+    <div *ngIf="visible" class="custom-modal-overlay" (click)="closeModal()">
+        <div class="custom-modal" (click)="$event.stopPropagation()">
+            <div class="custom-modal-header">
+                <h2>{{ selectedEvent?.status }}</h2>
+                <button class="close-button" (click)="closeModal()">&times;</button>
+            </div>
+            <p 
+            [innerHTML]="selectedEvent?.more">
+            </p>
+        </div>
+    </div>
+</div>
