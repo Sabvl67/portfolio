@@ -39,7 +39,7 @@ export class ExperienceComponent {
       {
         status: 'Software Developer Intern',
         date: 'Sep 2024 - Apr 2025',
-        description: `Contributed to impactful projects at a leading nuclear company, leveraging expertise in mapping tools, digital workflows, and full-stack development to enhance operational efficiency and ensure compliance. Designed and implemented Work Plans (WPLs) and Inspection Test Plans (ITPs), led and mentored students on industry-aligned projects, and pitched innovative solutions that secured stakeholder approval. Contributed to Technical Performance Assessments (TPAR), upholding quality standards in a high-stakes environment.
+        description: `Contributed to impactful projects at a leading nuclear company, leveraging expertise in mapping tools, digital workflows, and full-stack development to enhance operational efficiency and ensure compliance. <br><br> Designed and implemented Work Plans (WPLs) and Inspection Test Plans (ITPs), led and mentored students on industry-aligned projects, and pitched innovative solutions that secured stakeholder approval.
 `,
         icon: 'pi pi-desktop',
         color: '#607D8B',
@@ -59,7 +59,7 @@ mapping and providing directional guidance with the plants.<br><br>
         status: 'Mitacs Globalink Internship Mentor',
         date: 'Apr 2024 - Aug 2024',
         description:
-          'Mentored international students in the Mitacs Globalink Program, providing research guidance, cultural orientation, and professional development support. Leveraged leadership skills to address challenges, foster cross-cultural collaboration, and enhance students’ academic and professional experiences.',
+          'Mentored international students in the Mitacs Globalink Program, providing research guidance, cultural orientation, and professional development support. <br><br> Leveraged leadership skills to address challenges, foster cross-cultural collaboration, and enhance students’ academic and professional experiences.',
         icon: 'pi pi-globe',
         more: `
           Resolved and addressed academic and personal challenges for 6 international interns, ensuring a positive and productive experience in the Mitacs Globalink program. <br><br>
@@ -84,8 +84,8 @@ mapping and providing directional guidance with the plants.<br><br>
         date: 'Oct 2023 - Aug 2024',
         icon: 'pi pi-graduation-cap',
         description: `
-            Conducted research on API alternatives, social media analysis, and machine learning models like OpenAI's GPT. 
-            Contributed to organizing the Southern Alberta AI Conference 2024, highlighting AI's impact on business, ethics, and sustainability. 
+            Conducted research on API alternatives, social media analysis, and machine learning models like OpenAI's GPT. <br><br> 
+            Contributed to organizing the Southern Alberta AI Conference 2024, highlighting AI's impact on business, ethics, and sustainability. <br><br> 
             Collaborated on web app development to drive innovation for businesses.
             `,
         color: '#673AB7',
@@ -104,7 +104,7 @@ solutions.
         status: 'Machine Learning Fellow',
         date: 'May 2023 - Jun 2023',
         description:
-          'Selected as a Machine Learning Fellow at AI4Good Lab, sponsored by Amii, CIFAR, and Mila, to develop AI solutions for social impact. Gained hands-on experience in machine learning, from data preprocessing to model deployment, while collaborating with interdisciplinary teams and receiving mentorship from leading experts.',
+          'Selected as a Machine Learning Fellow at AI4Good Lab, sponsored by Amii, CIFAR, and Mila, to develop AI solutions for social impact.<br><br>  Gained hands-on experience in machine learning, from data preprocessing to model deployment, while collaborating with interdisciplinary teams and receiving mentorship from leading experts.',
         icon: 'pi pi-microchip-ai',
         color: '#9C27B0',
         more: `

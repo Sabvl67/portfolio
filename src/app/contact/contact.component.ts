@@ -15,9 +15,25 @@ import emailjs, { type EmailJSResponseStatus } from '@emailjs/browser';
   styleUrl: './contact.component.css'
 })
 export class ContactComponent {
+  
   value: string|undefined;
+  notificationMessage: string | null = null;
+
+
+  formData = {
+    name: '',
+    email: '',
+    message: '',
+  };
+
   sendEmail(e: Event) {
     e.preventDefault();
+
+    const templateParams = {
+      name: this.formData.name,
+      email: this.formData.email,
+      message: this.formData.message,
+    };
 
     emailjs
       .sendForm('service_2hzms68', 'template_lbn3vr9', e.target as HTMLFormElement, {
@@ -26,6 +42,7 @@ export class ContactComponent {
       .then(
         () => {
           console.log('SUCCESS!');
+          (e.target as HTMLFormElement).reset();
         },
         (error) => {
           console.log('FAILED...', (error as EmailJSResponseStatus).text);

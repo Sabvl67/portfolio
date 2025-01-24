@@ -1,14 +1,4 @@
-<script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
-</script>
-<script type="text/javascript">
-   (function(){
-      emailjs.init({
-        publicKey: "q1B6CwedVOJ6XwdqN",
-      });
-   })();
-</script>
-<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+
 <div class="contact-section" id="contact">
   <div class="contact-card grid nested-grid">
     <p class="text-5xl justify-content-center font-bold text-white">Get in touch</p>
@@ -16,15 +6,15 @@
       <form class="grid" (submit)="sendEmail($event)">
         <div class="col-6">
           <label for="name">Name</label>
-          <input id="name" type="text" class="input-field" />
+          <input id="name" type="text" class="input-field" [(ngModel)] = "formData.name" name="name" />
         </div>
         <div class="col-6">
           <label for="email">Email</label>
-          <input id="email" type="email" class="input-field" />
+          <input id="email" type="email" class="input-field" [(ngModel)] = "formData.email" name="email"/>
         </div>
         <div class="col-12">
           <label for="message">Message</label>
-          <textarea id="message" rows="4" class="input-field"></textarea>
+          <textarea id="message" rows="4" class="input-field" [(ngModel)] = "formData.message" name="message"></textarea>
         </div>
         <div class="pt-3 pl-2">
           <button class="custom-button" (onClick)="sendEmail($event)">Send Message</button>
