@@ -16,5 +16,5 @@ import { NavBarComponent } from './nav-bar/nav-bar.component';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'my-angular18-app';
+  title = 'portfolio';
 }
